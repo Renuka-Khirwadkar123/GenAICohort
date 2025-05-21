@@ -5,11 +5,8 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_qdrant import QdrantVectorStore
 from dotenv import load_dotenv
 import os
-
-
-
 load_dotenv()
-credential_path='C:\\Users\\Renuk\Downloads\\rag-applications-460503-92c18f66211e.json'
+credential_path="path"
 os.environ['GOOGLE_APPLICATION_CREDENTIALS']=credential_path
 
 pdf_path=Path(__file__).parent / "node-handbook.pdf"
